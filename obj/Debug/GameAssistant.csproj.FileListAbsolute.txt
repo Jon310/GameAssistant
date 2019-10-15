@@ -1,0 +1,10 @@
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.csprojAssemblyReference.cache
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.Form1.resources
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.Properties.Resources.resources
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.csproj.GenerateResource.cache
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.csproj.CoreCompileInputs.cache
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\bin\Debug\GameAssistant.exe.config
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\bin\Debug\GameAssistant.exe
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\bin\Debug\GameAssistant.pdb
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.exe
+C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.pdb
