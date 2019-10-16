@@ -88,7 +88,7 @@ namespace GameAssistant
                 if (timer.ElapsedMilliseconds > 60000)
                 {
                     timer.Restart();
-                    SendKeys.Send("w");
+                    Movement.Mover.randomove();
                 }
                     
 

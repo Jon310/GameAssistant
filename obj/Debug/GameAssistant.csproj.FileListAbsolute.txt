@@ -8,3 +8,12 @@ C:\Users\jon31\Desktop\GameAssistant\GameAssistant\bin\Debug\GameAssistant.exe
 C:\Users\jon31\Desktop\GameAssistant\GameAssistant\bin\Debug\GameAssistant.pdb
 C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.exe
 C:\Users\jon31\Desktop\GameAssistant\GameAssistant\obj\Debug\GameAssistant.pdb
+C:\Users\Jon310\Desktop\GameAssistant\bin\Debug\GameAssistant.exe.config
+C:\Users\Jon310\Desktop\GameAssistant\bin\Debug\GameAssistant.exe
+C:\Users\Jon310\Desktop\GameAssistant\bin\Debug\GameAssistant.pdb
+C:\Users\Jon310\Desktop\GameAssistant\obj\Debug\GameAssistant.csprojAssemblyReference.cache
+C:\Users\Jon310\Desktop\GameAssistant\obj\Debug\GameAssistant.Form1.resources
+C:\Users\Jon310\Desktop\GameAssistant\obj\Debug\GameAssistant.Properties.Resources.resources
+C:\Users\Jon310\Desktop\GameAssistant\obj\Debug\GameAssistant.csproj.GenerateResource.cache
+C:\Users\Jon310\Desktop\GameAssistant\obj\Debug\GameAssistant.exe
+C:\Users\Jon310\Desktop\GameAssistant\obj\Debug\GameAssistant.pdb
