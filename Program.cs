@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using System.Windows.Input;
+using Cursor = System.Windows.Forms.Cursor;
 
 namespace GameAssistant
 {
@@ -60,12 +61,15 @@ namespace GameAssistant
         {
             var timer = new Stopwatch();
             var AHrunning = false;
+            var snipepoint = new Point();
             while (true)
             {
+
                 if (Keyboard.IsKeyDown(Key.Insert))
                 {
                     timer.Start();
                     AHrunning = true;
+                    snipepoint = Cursor.Position;
                     await Task.Delay(Form1.update_frequency);
                 }
 
@@ -77,17 +81,22 @@ namespace GameAssistant
                     MessageBox.Show("Stopped");
                 }
 
-                var c2 = PixelDetection.Pixels.GetColorAt(System.Windows.Forms.Cursor.Position);
+                var c2 = PixelDetection.Pixels.GetColorAt(snipepoint);
                 var black = (c2.R == 0 && c2.G == 0 && c2.B == 0);
                 if (AHrunning && !black)
                 {
                     timer.Restart();
+                    if (Cursor.Position != snipepoint)
+                        Cursor.Position = snipepoint;
+                        
                     SendKeys.Send("4");
                 }
 
                 if (timer.ElapsedMilliseconds > 60000)
                 {
                     timer.Restart();
+                    SendKeys.Send("4");
+                    await Task.Delay(Form1.update_frequency);
                     Movement.Mover.randomove();
                 }
                     
