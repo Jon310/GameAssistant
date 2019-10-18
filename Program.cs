@@ -70,7 +70,8 @@ namespace GameAssistant
                 {
                     timer.Start();
                     AHrunning = true;
-                    snipepoint = Cursor.Position;
+                    // MouseMove Project
+                    //snipepoint = Controls.MouseMove.GetCursorPosition();
                     await Task.Delay(Form1.update_frequency * 2);
                 }
 
@@ -82,14 +83,18 @@ namespace GameAssistant
                     MessageBox.Show("Stopped");
                 }
 
-                var c2 = PixelDetection.Pixels.GetColorAt(snipepoint);
+                var c2 = PixelDetection.Pixels.GetColorAt(Cursor.Position);
                 var black = (c2.R == 0 && c2.G == 0 && c2.B == 0);
                 if (AHrunning && !black)
                 {
                     timer.Restart();
-                    if (Cursor.Position != snipepoint)
-                        Cursor.Position = snipepoint;
-                        
+                    // MouseMove Project
+                    //if (!Controls.MouseMove.GetCursorPos(ref snipepoint))
+                    //{
+                    //    Controls.MouseMove.HumanWindMouse(Controls.MouseMove.GetCursorPosition().X, Controls.MouseMove.GetCursorPosition().Y, 
+                    //        snipepoint.X, snipepoint.Y, 10, 10, 5);
+                    //}
+
                     SendKeys.Send("4");
                 }
 
