@@ -62,6 +62,7 @@ namespace GameAssistant
             var timer = new Stopwatch();
             var AHrunning = false;
             var snipepoint = new Point();
+            Random random = new Random();
             while (true)
             {
 
@@ -70,14 +71,14 @@ namespace GameAssistant
                     timer.Start();
                     AHrunning = true;
                     snipepoint = Cursor.Position;
-                    await Task.Delay(Form1.update_frequency);
+                    await Task.Delay(Form1.update_frequency * 2);
                 }
 
                 if (AHrunning && Keyboard.IsKeyDown(Key.Insert))
                 {
                     timer.Stop();
                     AHrunning = false;
-                    await Task.Delay(Form1.update_frequency);
+                    await Task.Delay(Form1.update_frequency * 2);
                     MessageBox.Show("Stopped");
                 }
 
@@ -92,16 +93,14 @@ namespace GameAssistant
                     SendKeys.Send("4");
                 }
 
-                if (timer.ElapsedMilliseconds > 60000)
+                if (timer.ElapsedMilliseconds > 60000 + random.Next(-1000, 2000))
                 {
                     timer.Restart();
                     SendKeys.Send("4");
                     await Task.Delay(Form1.update_frequency);
                     Movement.Mover.randomove();
-                }
-                    
-
-                Random random = new Random();
+                }                  
+                                
                 await Task.Delay(Form1.update_frequency + random.Next(-20, 20));
             }            
         }
