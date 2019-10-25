@@ -17,7 +17,7 @@ namespace GameAssistant
             InitializeComponent();
         }
 
-        private bool _started;
+        public static bool _started;
         private async void button1_Click(object sender, EventArgs e)
         {
             update_frequency = Convert.ToInt32(textBox2.Text);
@@ -31,6 +31,7 @@ namespace GameAssistant
         
         private async void button2_Click(object sender, EventArgs e)
         {
+            _started = false;
             await Program.StopTask();
         }
 
@@ -50,6 +51,16 @@ namespace GameAssistant
 
             _AHstarted = true;
             await Program.SnipeAH();
+        }
+
+        private async void button5_Click(object sender, EventArgs e)
+        {
+            update_frequency = Convert.ToInt32(textBox2.Text);
+
+            if (_started) return;
+
+            _started = true;
+            await Program.mainloop();
         }
     }
 }

@@ -57,6 +57,22 @@ namespace GameAssistant
         }
 
         
+        public static async Task<bool> mainloop()
+        {
+            while (Form1._started)
+            {
+                var rando = new Random().Next(Form1.update_frequency - 20, Form1.update_frequency + 20);
+                if (Controls.Keyboard.Key.IsKeyDown(Keys.E))
+                    SendKeys.Send("1");
+
+
+                await Task.Delay(rando);
+            }
+
+            return true;
+        }
+
+
         public static async Task<bool> SnipeAH()
         {
             var timer = new Stopwatch();

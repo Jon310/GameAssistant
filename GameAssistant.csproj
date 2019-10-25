@@ -48,6 +48,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Keyboard.cs" />
     <Compile Include="Controls\MouseMove.cs" />
     <Compile Include="Controls\Shift.cs" />
     <Compile Include="Form1.cs">
