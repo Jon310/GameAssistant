@@ -64,6 +64,8 @@ namespace GameAssistant
                 var rando = new Random().Next(Form1.update_frequency - 20, Form1.update_frequency + 20);
                 if (Controls.Keyboard.Key.IsKeyDown(Keys.E))
                     SendKeys.Send("1");
+                if (Controls.Keyboard.Key.IsKeyDown(Keys.F))
+                    SendKeys.Send("2");
 
 
                 await Task.Delay(rando);

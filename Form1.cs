@@ -32,6 +32,7 @@ namespace GameAssistant
         private async void button2_Click(object sender, EventArgs e)
         {
             _started = false;
+            _AHstarted = false;
             await Program.StopTask();
         }
 
@@ -61,6 +62,13 @@ namespace GameAssistant
 
             _started = true;
             await Program.mainloop();
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+                      
+            _started = false;
+            _AHstarted = false;
         }
     }
 }
