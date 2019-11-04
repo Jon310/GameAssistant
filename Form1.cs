@@ -64,9 +64,8 @@ namespace GameAssistant
             await Program.mainloop();
         }
 
-        private void Button6_Click(object sender, EventArgs e)
+        private void Button6_Click_1(object sender, EventArgs e)
         {
-                      
             _started = false;
             _AHstarted = false;
         }
